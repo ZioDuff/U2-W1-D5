@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:wght@400;700&display=swap");
+/* iniziamo con applicare i font utilizzati per questo progetto e rendendo il box sizing border box */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "roboto", sans-serif;
+}
+h1 {
+  font-family: "spectral", serif;
+}
+button {
+  font-family: "roboto", sans-serif;
+}
+
+/* da qui iniziamo a stilizzare quello che sara il ocntenuto dell header + la navbar */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  background-color: #ffc017;
+  padding-block: 1rem;
+  border-bottom: 1px solid #191919;
+}
+
+#navbar {
+  display: flex;
+  width: 1000px;
+  margin-inline: auto;
+  align-items: center;
+}
+
+nav img {
+  margin-inline-end: auto;
+  width: 150px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-inline: 10px;
+}
+
+nav button {
+  background-color: #191919;
+  color: white;
+  border: 1px solid transparent;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+#heroContent {
+  background-color: #ffc017;
+  border-bottom: 1px solid #191919;
+}
+#heading {
+  display: flex;
+
+  flex-direction: column;
+  width: 1000px;
+  margin-inline: auto;
+  align-items: flex-start;
+  padding-block: 3em;
+  row-gap: 30px;
+}
+
+#heading h1 {
+  font-size: 4em;
+  letter-spacing: -3px;
+}
+
+#heading button {
+  background-color: #191919;
+  color: white;
+  border: 1px solid transparent;
+  padding: 5px 30px;
+  border-radius: 20px;
+}
+
+/* qui finisce tutto lo stile che riguarda l'header */
+
+/* cominciamo a stilizzare quello che sara il main e il suo contenuto  */
+
+/* il main sara divo in piu parti  */
+
+/* la prima sezione del main sara un blocco contenente 6 "notize" divisa in due file e per ogni fila avremmo 3 "notizie" */
+/* svg {
+  position: relative;
+  left: 606px;
+} */
+
+/* main */
+#mainContent {
+  width: 1000px;
+  margin-inline: auto;
+}
+
+main {
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 65px;
+  color: #191919;
+}
+
+main span {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 10px 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+main img {
+  margin-right: 10px;
+}
+
+.trendingSection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trendingCard {
+  display: flex;
+  width: 33%;
+  margin-bottom: 20px;
+}
+.trendingTextLeft {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #ececec;
+  margin-right: 20px;
+}
+
+.trendingTextRight span {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.trendingTextRight span img {
+  width: 20px;
+}
+
+.trendingTextRight span h4 {
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 17px;
+}
+
+.trendingTextRight h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.trendingTextRight p {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #969595;
+  font-size: 0.8rem;
+}
+
+.trendingTextRight p img {
+  margin-left: 10px;
+}
+
+/* qui finisce lo style della sezone main */
+
+/* ora passiamo alla sezione article e all'aside */
+
+article {
+  display: flex;
+  margin-inline: auto;
+  width: 1000px;
+  justify-content: space-between;
+}
+
+.allnotice {
+  width: 550px;
+}
+.notice-card {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.notice-text {
+  width: 350px;
+}
+.notice-text span {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.notice-text span img {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.notice-text .star {
+  width: 20px;
+  margin-inline-end: auto;
+}
+
+.notice-text h3 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-block: 5px;
+}
+
+.notice-text h5 {
+  color: #969595;
+  font-size: 0.9rem;
+  line-height: 18px;
+  margin-block: 5px;
+}
+
+.img-notice {
+  width: 200px;
+}
+
+.img-notice img {
+  width: 100%;
+}
+
+.bottom-text span {
+  font-size: 0.75rem;
+  color: #969595;
+}
+
+.articleBtn {
+  padding: 5px 10px;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  margin-left: 7px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.articleBtn:hover {
+  background-color: #d8d6d6;
+  color: #191919;
+}
+
+/* una volta terminato la parte a sinistra contente tutte le notizie passiamo all'aside */
+
+aside {
+  width: 400px;
+  color: #191919;
+}
+.asideTop h1 {
+  margin-block: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.asideTopSpan {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1em;
+  gap: 10px;
+}
+
+.asideTopSpan span {
+  border: 1px solid #bfbfbf;
+  padding: 0.3em 0.6em;
+  background-color: #f2f2f24a;
+  border-radius: 3px;
+}
+.asideTopSpan span:hover {
+  cursor: pointer;
+  background-color: #e6e5e5;
+}
+.asideTopSpan a {
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #1a8917;
+  padding-bottom: 20px;
+}
+.asideTopSpan a:hover {
+  color: #6b6b6b;
+}
+.asiteBot ul li {
+  display: inline-block;
+}
+
+.asiteBot ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.asiteBot ul a {
+  text-decoration: none;
+  color: #191919;
+  line-height: 25px;
+  margin-right: 20px;
+  font-size: 0.85rem;
+}
