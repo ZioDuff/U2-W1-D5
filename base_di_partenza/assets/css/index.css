@@ -13,16 +13,16 @@ button {
   font-family: "roboto", sans-serif;
 }
 
-/* da qui iniziamo a stilizzare quello che sara il ocntenuto dell header + la navbar */
+/* da qui iniziamo a stilizzare quello che sara il ocntenuto dell header + la navbar  e usiamo lo sticky per poter portare giu la navbar*/
 
 header {
   position: sticky;
   top: 0;
   z-index: 1;
+  background-color: #ffc017;
 }
 
 nav {
-  background-color: #ffc017;
   padding-block: 1rem;
   border-bottom: 1px solid #191919;
 }
@@ -51,7 +51,7 @@ nav button {
   padding: 0.5rem;
   border-radius: 20px;
 }
-
+/* qui prendiamo in cosiderazione la sezione hero con il titolo principale */
 #heroContent {
   background-color: #ffc017;
   border-bottom: 1px solid #191919;
@@ -80,7 +80,7 @@ nav button {
   border-radius: 20px;
 }
 
-/* qui finisce tutto lo stile che riguarda l'header */
+/* qui finisce tutto lo stile che riguarda l'header e la sezione hero*/
 
 /* cominciamo a stilizzare quello che sara il main e il suo contenuto  */
 
@@ -180,14 +180,11 @@ article {
   width: 550px;
 }
 .notice-card {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 15px;
   margin-bottom: 30px;
-  align-items: center;
 }
 .notice-text {
   width: 350px;
+  display: inline-block;
 }
 .notice-text span {
   display: flex;
@@ -217,7 +214,8 @@ article {
 }
 
 .img-notice {
-  width: 200px;
+  display: inline-block;
+  width: 190px;
 }
 
 .img-notice img {
@@ -244,19 +242,26 @@ article {
 }
 
 /* una volta terminato la parte a sinistra contente tutte le notizie passiamo all'aside */
+/* una volta data la grandezza l'aside viene posizionato con lo sticky */
+/* e poi comiciamo a stilizzare tutto il contenuto al suo interno  */
 
 aside {
   width: 400px;
   color: #191919;
 }
-.asideTop h1 {
+
+.aside-container {
+  position: sticky;
+  top: 90px;
+}
+.aside-container h1 {
   margin-block: 15px;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.8em;
 }
 
-.asideTopSpan {
+.spans-container {
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px solid #e0e0e0;
@@ -264,36 +269,36 @@ aside {
   gap: 10px;
 }
 
-.asideTopSpan span {
+.spans-container span {
   border: 1px solid #bfbfbf;
   padding: 0.3em 0.6em;
   background-color: #f2f2f24a;
   border-radius: 3px;
 }
-.asideTopSpan span:hover {
+.spans-container span:hover {
   cursor: pointer;
   background-color: #e6e5e5;
 }
-.asideTopSpan a {
+.spans-container a {
   margin-top: 20px;
   text-decoration: none;
   font-size: 0.8rem;
   color: #1a8917;
   padding-bottom: 20px;
 }
-.asideTopSpan a:hover {
+.spans-container a:hover {
   color: #6b6b6b;
 }
-.asiteBot ul li {
+.list-container ul li {
   display: inline-block;
 }
 
-.asiteBot ul {
+.list-container ul {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
 }
-.asiteBot ul a {
+.list-container ul a {
   text-decoration: none;
   color: #191919;
   line-height: 25px;
